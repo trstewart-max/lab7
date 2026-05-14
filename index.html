@@ -18,8 +18,29 @@
   </head>
 
   <body>
-    <h1>🚴🏼‍♀️ Bikewatching</h1>
-    <div id="map"></div>
-  </body>
+  <header>
+  <h1>🚴🏼‍♀️ Bikewatching</h1>
+
+  <label>
+    Filter by time:
+    <input id="time-slider" type="range" min="-1" max="1440" value="-1" />
+    <time id="selected-time"></time>
+    <em id="any-time">(any time)</em>
+  </label>
+</header>
+
+  <div id="map">
+    <svg></svg>
+  </div>
+  <div class="legend">
+  <span>LEGEND:</span>
+
+  <div><span class="legend-dot departures"></span> More departures</div>
+  <div><span class="legend-dot balanced"></span> Balanced</div>
+  <div><span class="legend-dot arrivals"></span> More arrivals</div>
+</div>
+</body>
 </html>
+
+
 
